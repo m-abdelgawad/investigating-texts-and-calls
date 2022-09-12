@@ -1,0 +1,31 @@
+Task0:
+Knowing that Native Python lists are arrays of pointers and accessing any
+element is O(1), the time complexity for both functions print_first_text and
+print_first_call is:
+T(n) = O(1)
+
+Task1:
+The count_unique_numbers function depends on two inputs, so let the
+time complexity to be T(x,y).
+T(x,y) = O(x + y); since we will have to iterate over both calls and texts lists
+
+Task2:
+The time complexity is O(n) for iterating over the entire calls list:
+T(n) = O(n)
+
+Task3:
+Since the input is the calls list, and we're extracting the codes of all numbers,
+then the time complexity is O(n). For sorting, assuming that all numbers comes
+with unique codes, the time complexity is O(nlogn). So total time complexity:
+T(n) = O(n + nlogn)
+
+Task4:
+For x is the length of the calls list, and y is the length of the texts list,
+the time complexity T(x,y) is:
+T(x,y) = O(2x+y).
+The initial time complexity is O(x+y) is for looping over all calls and texts
+records.
+The extra O(x) is for assuming that all incoming numbers in the calls records
+are unique, and since we are looping over them to identify the telemarketers
+numbers, so the overall time complexity become:
+T(x,y)=O(2x+y)
